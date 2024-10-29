@@ -57,7 +57,7 @@ header a {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/*Navbar styles with dropdown toggle*/
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -70,7 +70,7 @@ nav {
 
 }
 
-/*Nav toggle*/
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -95,4 +95,28 @@ main {
 /* Footer */
 footer {
     background-color: orange;
+}
+
+/* Media queries - tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
 }
